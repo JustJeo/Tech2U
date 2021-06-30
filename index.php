@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport"
     content="width=device-width, initial-scale=1, user-scalable=yes">
-  <link rel="stylesheet" href="style.css" type="text/css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="app.js" type="text/javascript"></script>
   <title>Tech 2U Work</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-10 text-center">
-				<small>Once you view the html on this page, you will notice that all the css and js are in one page, as well as you will find a good amount of inline css styling in my html.  Please clean up this page as much as possible, connect css and js in external files if needed.  On review we will go over the types of way you made the html a bit cleaner. If something holds you up, come back to it or skip it, its ok if you dont finish each task.  Please reach out with any queations if anything is not clear.</small>
+				<small>Once you view the html on this page, you will notice that all the css and js are in one page, as well as you will find a good amount of inline css styling in my html.  Please clean up this page as much as possible, connect css and js in external files if needed.  On review we will go over the types of way you made the html a bit cleaner. If something holds you up, come back to it or skip it, its ok if you dont finish each task.  Please reach out with any questions if anything is not clear.</small>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
@@ -34,13 +35,18 @@
 				<div class="row">
 					<div class="question1_text col-md-12">
 						<p class="text-center">Enter text into the input below, create a submit button, and on click/submit have the text you entered in the input field below go to the div on the right side with text labeled (Send Text Here)</p>
-						<input type="text" name="new_text" placeholder="Enter text here..."/>
+            <form action="" method="post">
+						<input type="text" name="new_text" id="entered_text" placeholder="Enter text here..."/>
+            <input type="submit">
+            </form>
 					</div>
 				</div>
 				
 			</div>
 			<div class="col-md-6">
-				<div id="new-text-here" class="text-center">Send Text Here</div>
+				<div id="new-text-here" class="text-center">
+        <?php echo $_POST["new_text"]; ?>
+        </div>
 			</div>
 		</div>
 		<hr style="border-top:3px outset cyan;">
