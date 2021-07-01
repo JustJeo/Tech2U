@@ -27,7 +27,7 @@
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-10 text-center">
-				<small>Once you view the html on this page, you will notice that all the css and js are in one page, as well as you will find a good amount of inline css styling in my html.  Please clean up this page as much as possible, connect css and js in external files if needed.  On review we will go over the types of way you made the html a bit cleaner. If something holds you up, come back to it or skip it, its ok if you dont finish each task.  Please reach out with any questions if anything is not clear.</small>
+				<p>Once you view the html on this page, you will notice that all the css and js are in one page, as well as you will find a good amount of inline css styling in my html.  Please clean up this page as much as possible, connect css and js in external files if needed.  On review we will go over the types of way you made the html a bit cleaner. If something holds you up, come back to it or skip it, its ok if you dont finish each task.  Please reach out with any questions if anything is not clear.</p>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
@@ -49,7 +49,7 @@
 			</div>
 			<div class="col-md-6">
 				<div id="new-text-here" class="text-center">
-        <?php echo $_POST["new_text"]; ?>
+          <?php echo $_POST["new_text"]; ?>
         </div>
 			</div>
 		</div>
@@ -57,12 +57,15 @@
     <!-- Validation section -->
 		<hr style="border-top:3px outset cyan;">
 		<div class="row">
-			<div class="col-md-12"><h3 class="text-center">Form Validation<br><small>Send errors into "alerts()" if validation is not met</small><h3></div>
+			<div class="col-md-12">
+        <h3 class="text-center">Form Validation</h3>
+        <p class="text-center">Send errors into "alerts()" if validation is not met</p>
+      </div>
 		</div>
 		<div class="form_validation_rows row">
 			<div class="col-md-8">
 				<h5 class="text-center">Read Only, any edits trigger an error</h5>
-        <form action="" method="post" name="editCheck">
+        <form method="post" name="editCheck">
 				<input type="text" name="read_only_input" value="Read Only Input" placeholder="Read Only" />
 			</div>
 			<div class="col-md-4 text-center">
@@ -74,7 +77,7 @@
 		<div class="form_validation_rows row">
 			<div class="col-md-8">
 				<h5 class="text-center">Only allow number 0-9, all other characters triggers an error alert</h5>
-        <form action="" method="post" name="numCheck">
+        <form method="post" name="numCheck">
 				<input type="text" name="only_numbers_input" placeholder="Only Numbers" />
 			</div>
 			<div class="col-md-4 text-center">
@@ -85,7 +88,7 @@
 		</div><div class="form_validation_rows row">
 			<div class="col-md-8">
 				<h5 class="text-center">Only allow letters, no numbers or special charatcers or else it triggers an error alert</h5>
-        <form action="" method="post" name="alphCheck">
+        <form method="post" name="alphCheck">
 				<input type="text" name="only_letters_input" placeholder="Only Letter" />
 			</div>
 			<div class="col-md-4 text-center">
@@ -97,7 +100,7 @@
 		<div class="form_validation_rows row">
 			<div class="col-md-8">
 				<h5 class="text-center">Input cannot be blank, if input is empty on validate, trigger an error alert</h5>
-        <form action="" method="post" name="blankCheck">
+        <form method="post" name="blankCheck">
 				<input type="text" name="not_empty_input" placeholder="Not Empty Input" />
 			</div>
 			<div class="col-md-4 text-center">
@@ -110,7 +113,10 @@
     <!-- Building and Parsing Arrays -->
 		<hr style="border-top:3px outset cyan;">
 		<div class="row">
-			<div class="col-md-12"><h3 class="text-center">Building & Parsing Arrays<br><small>Putting data into a table from array in js</small><h3></div>
+			<div class="col-md-12">
+        <h3 class="text-center">Building & Parsing Arrays</h3>
+        <p class="text-center">Putting data into a table from array in js</p>
+      </div>
 		</div>
 		<div class="form_validation_rows row">
 			<div class="col-md-12">
@@ -138,27 +144,33 @@
 			<div class="col-md-12">
 				<h5 class="text-center">Use the array found in html code, loop through the array and enter the values into the table below</h5>
 				<table id="my-table2">
+        <tr class="text-center">
+					<th>Make</th>
+					<th>Model</th>
+					<th>Color</th>
+          <th>Miles</th>
+				</tr>
         <?php $car_info = [
             ["Ford", 'F1-50', 'red', 85000],
             ["Tesla", 'Model 3', 'white', 10000],
             ["BMW", 'M8', 'black', 103000]
-        ];
-        foreach ($car_info as list($make, $model, $color, $miles)) {
-        echo "<tr class='text-center'>";
-          echo "<td>";
-          echo $make;
-          echo "</td>";
-          echo "<td>";
-          echo $model;
-          echo "</td>";
-          echo "<td>";
-          echo $color;
-          echo "</td>";
-          echo "<td>";
-          echo $miles;
-          echo "</td>";
-        echo "</tr>";
-        }
+          ];
+          foreach ($car_info as list($make, $model, $color, $miles)) {
+          echo "<tr class='text-center'>";
+            echo "<td>";
+            echo $make;
+            echo "</td>";
+            echo "<td>";
+            echo $model;
+            echo "</td>";
+            echo "<td>";
+            echo $color;
+            echo "</td>";
+            echo "<td>";
+            echo $miles;
+            echo "</td>";
+          echo "</tr>";
+          }
         ?>
 				</table>
 			</div>
@@ -167,27 +179,38 @@
     <!-- Jquery section -->
 		<hr style="border-top:3px outset cyan;">
 		<div class="row">
-			<div class="col-md-12"><h3 class="text-center">Jquery Click Actions<br><small>Follow the instructions in each section, create each action using jquery</small><h3></div>
+			<div class="col-md-12">
+        <h3 class="text-center">Jquery Click Actions</h3>
+        <p class="text-center">Follow the instructions in each section, create each action using jquery</p>
+      </div>
 		</div>
 		<div class="row">
 			<div class="col-md-3">
-				<div id="hide-this-box" class="click_boxes"><div class="jdr_middle_text text-center">Hide This Box</div></div>
+				<div id="hide-this-box" class="click_boxes">
+          <div class="jdr_middle_text text-center">Hide This Box</div>
+        </div>
 			</div>
 			<div class="col-md-3">
-				<div id="change-box-color" class="click_boxes"><div class="jdr_middle_text text-center">Change My Box <br>To Yellow</div></div>
+				<div id="change-box-color" class="click_boxes">
+          <div class="jdr_middle_text text-center">Change My Box<br>To Yellow</div>
+        </div>
 			</div>
 			<div class="col-md-3">
-				<div id="change-box-height" class="click_boxes"><div class="jdr_middle_text text-center">Change My Height</div></div>
+				<div id="change-box-height" class="click_boxes">
+          <div class="jdr_middle_text text-center">Change My Height</div>
+        </div>
 			</div>
 			<div class="col-md-3">
-				<div id="change-box-date" class="click_boxes"><div class="jdr_middle_text text-center">Change to Today's Date<br>
+				<div id="change-box-date" class="click_boxes">
+          <div class="jdr_middle_text text-center">Change to Today's Date<br>
         <!-- <span id="fake-date">(6-29-2021)</span> -->
         <span id="real-date">
         <?php
           echo date("m/d/Y")
         ?>
         </span>
-        </div></div>
+          </div>
+        </div>
 			</div>
 		</div>
 		<div class="row" style="margin-top:10px;">
@@ -208,28 +231,29 @@
     <!-- AJAX section -->
 		<hr style="border-top:3px outset cyan;">
 		<div class="row" style="margin-top:25px;">
-			<div class="col-md-12"><h3 class="text-center">Using Ajax<br><small>Use ajax to take content from an external source (ext_data.php) and add it into textbox below.</small><h3></div>
+			<div class="col-md-12">
+        <h3 class="text-center">Using Ajax</h3>
+        <p class="text-center">Use ajax to take content from an external source (ext_data.php) and add it into textbox below.</p>
+      </div>
 		</div>
 		<div class="row" style="margin-top:10px;">
 			<div class="col-md-12 text-center">
-				<textarea class="ajax_ext_data_input" name="ajax_ext_data" type="textbox" rows="4"><?php include 'ext_data.php';?></textarea>
-        
+				<textarea class="ajax_ext_data_input" name="ajax_ext_data" type="textbox" rows="4">
+          <?php include 'ext_data.php';?>
+        </textarea>
 			</div>
 		</div>
 		<hr style="border-top:3px outset cyan;">
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-10 text-center">
-				<small>Thank you for participating in this evaluation.  Please contact Jeff Robinson @ jrobinson@tech2u.com when your work is ready for review.</small>
+				<p>Thank you for participating in this evaluation.  Please contact Jeff Robinson @ jrobinson@tech2u.com when your work is ready for review.</p>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
 	</div>
 	<div class="col-md-3"></div>
-	
-
 </div>
-
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="app.js"></script>
