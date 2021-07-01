@@ -185,10 +185,10 @@
 		</div>
 		<div class="row" style="margin-top:10px;">
 			<div class="col-md-3 text-center">
-				<button class="btn btn-success">Hide Box</button>
+				<button id="magicBox" class="btn btn-success">Hide Box</button>
 			</div>
 			<div class="col-md-3 text-center">
-				<button class="btn btn-success">Change Color</button>
+				<button onclick="boxChange('yellow');" class="btn btn-success">Change Color</button>
 			</div>
 			<div class="col-md-3 text-center">
 				<button class="btn btn-success">Change Height</button>
@@ -225,9 +225,5 @@
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-
-});
-</script>
+<script src="app.js"></script>
 </html>

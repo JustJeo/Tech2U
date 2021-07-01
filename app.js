@@ -40,3 +40,16 @@ function noBlank() {
     showAlert()
   }
 }
+
+// Change Box Color
+// function boxChange(color) {
+//   document.getElementById("change-box-color").style.background = color;
+// }
+
+$(document).ready(function(){
+  // Hide This Box section
+  $("#magicBox").on("click", function() {
+    $("#hide-this-box").toggle();
+  });
+
+});
