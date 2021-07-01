@@ -65,4 +65,11 @@ $(document).ready(function(){
       $("#change-box-height").css("height", "50px")
     )
   })
+
+  // Change Date
+  $("#changeDate").on("click", function() {
+    $("#real-date").toggle(
+    )
+  })
 });
+

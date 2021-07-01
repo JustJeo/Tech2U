@@ -180,7 +180,14 @@
 				<div id="change-box-height" class="click_boxes"><div class="jdr_middle_text text-center">Change My Height</div></div>
 			</div>
 			<div class="col-md-3">
-				<div class="click_boxes"><div class="jdr_middle_text text-center">Change to Today's Date<br>(6-29-2021)</div></div>
+				<div id="change-box-date" class="click_boxes"><div class="jdr_middle_text text-center">Change to Today's Date<br>
+        <!-- <span id="fake-date">(6-29-2021)</span> -->
+        <span id="real-date">
+        <?php
+          echo date("m/d/Y")
+        ?>
+        </span>
+        </div></div>
 			</div>
 		</div>
 		<div class="row" style="margin-top:10px;">
@@ -194,7 +201,7 @@
 				<button id="boxSize" class="btn btn-success">Change Height</button>
 			</div>
 			<div class="col-md-3 text-center">
-				<button class="btn btn-success">Change Date</button> 
+				<button id="dateChange" class="btn btn-success">Change Date</button> 
 			</div>
 		</div>
 
