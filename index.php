@@ -85,11 +85,13 @@
 		</div><div class="form_validation_rows row">
 			<div class="col-md-8">
 				<h5 class="text-center">Only allow letters, no numbers or special charatcers or else it triggers an error alert</h5>
+        <form action="" method="post" name="alphCheck">
 				<input type="text" name="only_letters_input" placeholder="Only Letter" />
 			</div>
 			<div class="col-md-4 text-center">
 				<br>
 				<button class="btn btn-success" onclick="onlyLets()">Validate</button>
+        </form>
 			</div>
 		</div>
 		<div class="form_validation_rows row">

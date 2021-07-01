@@ -16,17 +16,20 @@ function noEdit() {
 function onlyNums() {
   const digits = /^[0-9]+$/
   const nums = document.forms["numCheck"]["only_numbers_input"].value
+  // If characters in input box are not numbers
   if (!nums.match(digits)) {
     showAlert()
   }
-  // If characters in input box are not numbers
-    // Then showAlert()
 }
 
 // Letters Only Function
 function onlyLets() {
+  const letters = /^[A-Za-z]+$/
+  const alph = document.forms["alphCheck"]["only_letters_input"].value
   // If characters in input box are not letters
-    // Then showAlert()
+  if (!alph.match(letters)) {
+    showAlert()
+  }
 }
 
 // No Blank Function
