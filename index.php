@@ -115,10 +115,6 @@
 		<div class="form_validation_rows row">
 			<div class="col-md-12">
 				<h5 class="text-center">Parse this js array (Array("Ford", "Tesla", "BMW")) into the table below</h5>
-
-        <?php
-        $carray = array("Ford", "Tesla", "BMW");
-        ?>
 				<table id="my-table">
 				<tr class="text-center">
 					<th>Car One</th>
@@ -126,15 +122,15 @@
 					<th>Car Three</th>
 				</tr>
 				<tr class="text-center">
-					<td><?php echo $carray[0] ?></td>
-					<td><?php echo $carray[1] ?></td>
-					<td><?php echo $carray[2] ?></td>
+        <?php
+        $carray = array("Ford", "Tesla", "BMW");
+        foreach ($carray as $value) {
+          echo "<td>";
+          echo $value;
+        }
+        ?>
 				</tr>
 				</table>
-				<script>
-				const cars = new Array("Ford", "Tesla", "BMW");
-				// Enter js here to parse data from array into table above
-				</script>
 			</div>
 		</div>
 		<div class="form_validation_rows row">
