@@ -10,8 +10,9 @@
   <script src="app.js" type="text/javascript"></script>
   <title>Tech 2U Work</title>
 </head>
-<body>
 
+<!-- Start -->
+<body>
 <div class="row" style="margin-bottom:25px; padding:5px;">
 	<div class="col-md-3"></div>
 	<div class="col-md-6">
@@ -22,6 +23,7 @@
 			</div>
 			<div class="col-md-3"></div>
 		</div>
+    <!-- Intro -->
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-10 text-center">
@@ -29,6 +31,8 @@
 			</div>
 			<div class="col-md-1"></div>
 		</div>
+
+    <!-- Enter and Display Text section -->
 		<hr style="border-top:3px outset cyan;">
 		<div class="row">
 			<div class="col-md-6">
@@ -36,7 +40,7 @@
 					<div class="question1_text col-md-12">
 						<p class="text-center">Enter text into the input below, create a submit button, and on click/submit have the text you entered in the input field below go to the div on the right side with text labeled (Send Text Here)</p>
             <form action="" method="post">
-						<input type="text" name="new_text" id="entered_text" placeholder="Enter text here..."/>
+						<input type="text" name="new_text" placeholder="Enter text here..."/>
             <input type="submit">
             </form>
 					</div>
@@ -49,6 +53,8 @@
         </div>
 			</div>
 		</div>
+
+    <!-- Validation section -->
 		<hr style="border-top:3px outset cyan;">
 		<div class="row">
 			<div class="col-md-12"><h3 class="text-center">Form Validation<br><small>Send errors into "alerts()" if validation is not met</small><h3></div>
@@ -56,11 +62,13 @@
 		<div class="form_validation_rows row">
 			<div class="col-md-8">
 				<h5 class="text-center">Read Only, any edits trigger an error</h5>
+        <form action="" method="post">
 				<input type="text" name="read_only_input" value="Read Only Input" placeholder="Read Only" />
 			</div>
 			<div class="col-md-4 text-center">
-				<h3></h3>
-				<button class="btn btn-success">Validate</button>
+				<br>
+				<button class="btn btn-success" onclick="noEdit()">Validate</button>
+        </form>
 			</div>
 		</div>
 		<div class="form_validation_rows row">
@@ -69,8 +77,8 @@
 				<input type="text" name="only_numbers_input" placeholder="Only Numbers" />
 			</div>
 			<div class="col-md-4 text-center">
-				<h3></h3>
-				<button class="btn btn-success">Validate</button>
+				<br>
+				<button class="btn btn-success" onclick="onlyNums()">Validate</button>
 			</div>
 		</div><div class="form_validation_rows row">
 			<div class="col-md-8">
@@ -78,20 +86,24 @@
 				<input type="text" name="only_letters_input" placeholder="Only Letter" />
 			</div>
 			<div class="col-md-4 text-center">
-				<h3></h3>
-				<button class="btn btn-success">Validate</button>
+				<br>
+				<button class="btn btn-success" onclick="onlyLets()">Validate</button>
 			</div>
 		</div>
 		<div class="form_validation_rows row">
 			<div class="col-md-8">
 				<h5 class="text-center">Input cannot be blank, if input is empty on validate, trigger an error alert</h5>
+        <form action="" method="post" name="blankCheck">
 				<input type="text" name="not_empty_input" placeholder="Not Empty Input" />
 			</div>
 			<div class="col-md-4 text-center">
-				<h3></h3>
-				<button class="btn btn-success">Validate</button>
+				<br>
+				<button class="btn btn-success" onclick="noBlank()">Validate</button>
+        </form>
 			</div>
 		</div>
+
+    <!-- Building and Parsing Arrays -->
 		<hr style="border-top:3px outset cyan;">
 		<div class="row">
 			<div class="col-md-12"><h3 class="text-center">Building & Parsing Arrays<br><small>Putting data into a table from array in js</small><h3></div>
@@ -156,6 +168,8 @@
 				</script>
 			</div>
 		</div>
+
+    <!-- Jquery section -->
 		<hr style="border-top:3px outset cyan;">
 		<div class="row">
 			<div class="col-md-12"><h3 class="text-center">Jquery Click Actions<br><small>Follow the instructions in each section, create each action using jquery</small><h3></div>
@@ -188,6 +202,8 @@
 				<button class="btn btn-success">Change Date</button> 
 			</div>
 		</div>
+
+    <!-- AJAX section -->
 		<hr style="border-top:3px outset cyan;">
 		<div class="row" style="margin-top:25px;">
 			<div class="col-md-12"><h3 class="text-center">Using Ajax<br><small>Use ajax to take content from an external source (ext_data.php) and add it into textbox below.</small><h3></div>
