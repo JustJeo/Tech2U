@@ -62,7 +62,7 @@
 		<div class="form_validation_rows row">
 			<div class="col-md-8">
 				<h5 class="text-center">Read Only, any edits trigger an error</h5>
-        <form action="" method="post">
+        <form action="" method="post" name="editCheck">
 				<input type="text" name="read_only_input" value="Read Only Input" placeholder="Read Only" />
 			</div>
 			<div class="col-md-4 text-center">

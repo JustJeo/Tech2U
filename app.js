@@ -6,7 +6,8 @@ function showAlert() {
 
 // Read Only Function
 function noEdit() {
-  let validInput = ("Read Only Input")
+  const validInput = ("Read Only Input")
+  const userInput = document.forms["editCheck"]["read_only_input"].value
   if(userInput.toString() !== validInput) {
     showAlert()
   }
