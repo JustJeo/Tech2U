@@ -14,6 +14,11 @@ function noEdit() {
 
 // Numbers Only Function
 function onlyNums() {
+  const digits = /^[0-9]+$/
+  const nums = document.forms["numCheck"]["only_numbers_input"].value
+  if (!nums.match(digits)) {
+    showAlert()
+  }
   // If characters in input box are not numbers
     // Then showAlert()
 }
