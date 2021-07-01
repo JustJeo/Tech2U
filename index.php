@@ -115,17 +115,21 @@
 		<div class="form_validation_rows row">
 			<div class="col-md-12">
 				<h5 class="text-center">Parse this js array (Array("Ford", "Tesla", "BMW")) into the table below</h5>
+
+        <?php
+        $carray = array("Ford", "Tesla", "BMW");
+        ?>
 				<table id="my-table">
-				  <tr class="text-center">
+				<tr class="text-center">
 					<th>Car One</th>
 					<th>Car Two</th>
 					<th>Car Three</th>
-				  </tr>
-				  <tr class="text-center">
-					<td>Car name here</td>
-					<td>Car name here</td>
-					<td>Car name here</td>
-				  </tr>
+				</tr>
+				<tr class="text-center">
+					<td><?php echo $carray[0] ?></td>
+					<td><?php echo $carray[1] ?></td>
+					<td><?php echo $carray[2] ?></td>
+				</tr>
 				</table>
 				<script>
 				const cars = new Array("Ford", "Tesla", "BMW");
@@ -137,36 +141,36 @@
 			<div class="col-md-12">
 				<h5 class="text-center">Use the array found in html code, loop through the array and enter the values into the table below</h5>
 				<table id="my-table2">
-				  <tr class="text-center">
+				<tr class="text-center">
 					<th>Car</th>
 					<th>Model</th>
 					<th>Color</th>
 					<th>Miles</th>
-				  </tr>
-				  <tr class="text-center">
+				</tr>
+				<tr class="text-center">
 					<td>Ford</td>
 					<td></td>
 					<td></td>
 					<td></td>
-				  </tr>
-				  <tr class="text-center">
+				</tr>
+				<tr class="text-center">
 					<td>Tesla</td>
 					<td></td>
 					<td></td>
 					<td></td>
-				  </tr>
-				  <tr class="text-center">
+				</tr>
+				<tr class="text-center">
 					<td>BMW</td>
 					<td></td>
 					<td></td>
 					<td></td>
-				  </tr>
+				</tr>
 				</table>
 				<script>
 				var car_info = [
-						  ["ford", 'F1-50', 'red', 85000],
-						  ["tesla", 'Model 3', 'white', 10000],
-						  ["bmw", 'M8', 'black', 103000]
+						["ford", 'F1-50', 'red', 85000],
+						["tesla", 'Model 3', 'white', 10000],
+						["bmw", 'M8', 'black', 103000]
 						];
 				// Use this array to loop through and enter the data into the table above 
 				</script>
