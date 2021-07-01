@@ -127,6 +127,7 @@
         foreach ($carray as $value) {
           echo "<td>";
           echo $value;
+          echo "</td>";
         }
         ?>
 				</tr>
@@ -137,30 +138,27 @@
 			<div class="col-md-12">
 				<h5 class="text-center">Use the array found in html code, loop through the array and enter the values into the table below</h5>
 				<table id="my-table2">
-				<tr class="text-center">
-					<th>Car</th>
-					<th>Model</th>
-					<th>Color</th>
-					<th>Miles</th>
-				</tr>
-				<tr class="text-center">
-					<td>Ford</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="text-center">
-					<td>Tesla</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr class="text-center">
-					<td>BMW</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
+        <?php $car_info = [
+            ["Ford", 'F1-50', 'red', 85000],
+            ["Tesla", 'Model 3', 'white', 10000],
+            ["BMW", 'M8', 'black', 103000]
+        ];
+        foreach ($car_info as list($make, $model, $color, $miles)) {
+          echo "<tr class='text-center'>";
+          echo "<td>";
+          echo $make;
+          echo "</td>";
+          echo "<td>";
+          echo $model;
+          echo "</td>";
+          echo "<td>";
+          echo $color;
+          echo "</td>";
+          echo "<td>";
+          echo $miles;
+          echo "</td>";
+        }
+        ?>
 				</table>
 				<script>
 				var car_info = [
