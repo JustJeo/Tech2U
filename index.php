@@ -188,10 +188,10 @@
 				<button id="magicBox" class="btn btn-success">Hide Box</button>
 			</div>
 			<div class="col-md-3 text-center">
-				<button onclick="boxChange('yellow');" class="btn btn-success">Change Color</button>
+				<button id="boxChange" class="btn btn-success">Change Color</button>
 			</div>
 			<div class="col-md-3 text-center">
-				<button class="btn btn-success">Change Height</button>
+				<button id="boxSize" class="btn btn-success">Change Height</button>
 			</div>
 			<div class="col-md-3 text-center">
 				<button class="btn btn-success">Change Date</button> 

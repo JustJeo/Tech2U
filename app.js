@@ -47,9 +47,22 @@ function noBlank() {
 // }
 
 $(document).ready(function(){
-  // Hide This Box section
+  // Hide This Box
   $("#magicBox").on("click", function() {
     $("#hide-this-box").toggle();
   });
 
+  // Change Box Color
+  $("#boxChange").on("click", function() {
+    $("#change-box-color").toggle(
+      $("#change-box-color").css("background-color", "yellow")
+    )
+  });
+
+  // Change Box Size
+  $("#boxSize").on("click", function () {
+    $("#change-box-height").toggle(
+      $("#change-box-height").css("height", "50px")
+    )
+  })
 });
