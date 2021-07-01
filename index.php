@@ -144,7 +144,7 @@
             ["BMW", 'M8', 'black', 103000]
         ];
         foreach ($car_info as list($make, $model, $color, $miles)) {
-          echo "<tr class='text-center'>";
+        echo "<tr class='text-center'>";
           echo "<td>";
           echo $make;
           echo "</td>";
@@ -157,17 +157,10 @@
           echo "<td>";
           echo $miles;
           echo "</td>";
+        echo "</tr>";
         }
         ?>
 				</table>
-				<script>
-				var car_info = [
-						["ford", 'F1-50', 'red', 85000],
-						["tesla", 'Model 3', 'white', 10000],
-						["bmw", 'M8', 'black', 103000]
-						];
-				// Use this array to loop through and enter the data into the table above 
-				</script>
 			</div>
 		</div>
 
@@ -212,7 +205,8 @@
 		</div>
 		<div class="row" style="margin-top:10px;">
 			<div class="col-md-12 text-center">
-				<textarea class="ajax_ext_data_input" name="ajax_ext_data" type="textbox" rows="4">Put External Data Here</textarea>
+				<textarea class="ajax_ext_data_input" name="ajax_ext_data" type="textbox" rows="4"><?php include 'ext_data.php';?></textarea>
+        
 			</div>
 		</div>
 		<hr style="border-top:3px outset cyan;">

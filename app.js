@@ -40,9 +40,3 @@ function noBlank() {
     showAlert()
   }
 }
-
-var car_info = [
-  ["ford", 'F1-50', 'red', 85000],
-  ["tesla", 'Model 3', 'white', 10000],
-  ["bmw", 'M8', 'black', 103000]
-  ];
